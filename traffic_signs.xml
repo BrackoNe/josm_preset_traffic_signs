@@ -173,6 +173,7 @@
 				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
 				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
 				</item>
+			</group>
 		</group>
 	</group>
 </presets>
