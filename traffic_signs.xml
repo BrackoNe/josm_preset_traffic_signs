@@ -3,7 +3,7 @@
 
 <group name="Traffic Signs (RS)" sr-latn.name="Saobraćajni znakovi (RS)" icon="josm_preset_traffic_signs-master/RS/RS.png">
 <!-- Warnings -->
-	<group name="Warnings" sr-latn.name="Znakovi upozorenja" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-1.png">
+	<group name="Warnings" sr-latn.name="Znakovi upozorenja" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-25.png">
 		<group name="Curves" sr-latn.name="Krivine" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-1.png">
 			<item name="Curve (Left)" sr-latn.name="Krivina nalevo" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-1.png" type="node">
 				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-1" />
@@ -66,7 +66,7 @@
 				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
 				</item>
 				
-			<item name="Steep Descent" sr-latn.name="Opasna nizbrdica" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-3.png" type="node">
+			<item name="Steep Descent" sr-latn.name="Opasna nizbrdica" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-4.png" type="node">
 				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-4" />
 				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-4" />
 				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-4" match="keyvalue!" />
@@ -110,7 +110,7 @@
 				</item>
 			</group>
 			
-		<group name="Slippery Road" sr-latn.name="Klizav kolovoz" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-11.png">
+		<group name="Danger on the Road" sr-latn.name="Opasnost na putu" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-25.png">
 			<item name="Opening bridge" sr-latn.name="Pokretni most" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-6.png" type="node">
 				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-6" />
 				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-6" />
@@ -170,10 +170,363 @@
 				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-12" />
 				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-12" match="keyvalue!" />
 				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-12" match="keyvalue!" />
+				<check key="traffic_sign:type" text="Different type of the same traffic sign" sr-latn.text="Drugi tip istog saobraćajnog znaka" default="off" value_off="" value_on="2" match="keyvalue!" />
+				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+				</item>
+				
+			<item name="Falling Rocks (From Right)" sr-latn.name="Odronjavanje kamenja sa desne strane puta" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-13.png" type="node">
+				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-13" />
+				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-13" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-13" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-13" match="keyvalue!" />
+				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+				</item>
+				
+			<item name="Falling Rocks (From Left)" sr-latn.name="Odronjavanje kamenja sa leve strane puta" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-13.1.png" type="node">
+				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-13.1" />
+				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-13.1" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-13.1" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-13.1" match="keyvalue!" />
+				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+				</item>
+				
+			<item name="Edge Drop" sr-latn.name="Neučvršćena bankina" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-37.png" type="node">
+				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-37" />
+				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-37" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-37" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-37" match="keyvalue!" />
+				<check key="traffic_sign:type" text="Old type of the traffic sign" sr-latn.text="Stari tip saobraćajnog znaka" default="off" value_off="" value_on="old" match="keyvalue!" />
+				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+				</item>
+				
+			<item name="General Warning" sr-latn.name="Opasnost na putu" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-25.png" type="node">
+				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-25" />
+				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-25" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-25" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-25" match="keyvalue!" />
 				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
 				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
 				</item>
 			</group>
+			
+		<group name="Pedestrians and Cyclists" sr-latn.name="Pešaci i biciklisti" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-14.png">
+			<item name="Pedestrian Crossing" sr-latn.name="Blizina pešačkog prelaza" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-14.png" type="node">
+				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-14" />
+				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-14" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-14" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-14" match="keyvalue!" />
+				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+				</item>
+				
+			<item name="Children" sr-latn.name="Deca na putu" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-15.png" type="node">
+				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-15" />
+				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-15" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-15" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-15" match="keyvalue!" />
+				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+				</item>
+				
+			<item name="Cyclists" sr-latn.name="Biciklisti na putu" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-16.png" type="node">
+				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-16" />
+				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-16" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-16" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-16" match="keyvalue!" />
+				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+				</item>
+			
+			<item name="Pedestrians" sr-latn.name="Pešaci na putu" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-36.png" type="node">
+				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-36" />
+				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-36" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-36" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-36" match="keyvalue!" />
+				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+				</item>
+			</group>
+		<group name="Animals" sr-latn.name="Životinje na putu" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-18.png">
+			<item name="Domestic Animals" sr-latn.name="Životinje na putu" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-17.png" type="node">
+				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-17" />
+				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-17" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-17" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-17" match="keyvalue!" />
+				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+				</item>
+				
+			<item name="Wild Animals" sr-latn.name="Divljač na putu" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-18.png" type="node">
+				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-18" />
+				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-18" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-18" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-18" match="keyvalue!" />
+				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+				</item>
+			</group>
+			
+		<item name="Roadworks" sr-latn.name="Radovi na putu" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-19.png" type="node">
+			<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-19" />
+			<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-19" />
+			<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-19" match="keyvalue!" />
+			<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-19" match="keyvalue!" />
+			<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+			<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+			</item>
+			
+		<group name="Traffic Signals" sr-latn.name="Semafori" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-20.png">
+			<item name="Traffic Signals Ahead (Vertical)" sr-latn.name="Nailaženje na semafore (Vertikalno)" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-20.png" type="node">
+				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-20" />
+				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-20" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-20" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-20" match="keyvalue!" />
+				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+				</item>
+				
+			<item name="Traffic Signals Ahead (Horizontal)" sr-latn.name="Nailaženje na semafore (Horizontalno)" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-20.1.png" type="node">
+				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-20.1" />
+				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-20.1" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-20.1" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-20.1" match="keyvalue!" />
+				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+				</item>
+			</group>
+		
+		<item name="Low-Flying Aircraft" sr-latn.name="Blizina avionske piste" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-21.png" type="node">
+			<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-21" />
+			<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-21" />
+			<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-21" match="keyvalue!" />
+			<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-21" match="keyvalue!" />
+			<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+			<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+			</item>
+			
+		<group name="Crosswinds" sr-latn.name="Bočni vetar" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-22.png">
+			<item name="Crosswinds (Right)" sr-latn.name="Bočni vetar s desna" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-22.png" type="node">
+				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-22" />
+				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-22" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-22" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-22" match="keyvalue!" />
+				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+				</item>
+				
+			<item name="Crosswinds (Left)" sr-latn.name="Bočni vetar s leva" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-22.1.png" type="node">
+				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-22.1" />
+				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-22.1" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-22.1" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-22.1" match="keyvalue!" />
+				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+				</item>
+			</group>
+			
+		<item name="Two-Way Traffic" sr-latn.name="Saobraćaj u oba smera" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-23.png" type="node">
+			<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-23" />
+			<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-23" />
+			<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-23" match="keyvalue!" />
+			<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-23" match="keyvalue!" />
+			<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+			<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+			</item>
+			
+		<item name="Tunnel" sr-latn.name="Tunel" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-24.png" type="node">
+			<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-24" />
+			<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-24" />
+			<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-24" match="keyvalue!" />
+			<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-24" match="keyvalue!" />
+			<check key="traffic_sign:type" text="Old type of the traffic sign" sr-latn.text="Stari tip saobraćajnog znaka" default="off" value_off="" value_on="old" match="keyvalue!" />
+			<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+			<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+			</item>
+			
+		<group name="Crossroads" sr-latn.name="Ukrštanje puteva" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-27.png">
+			<item name="Uncontrolled Crossroad" sr-latn.name="Ukrštanje puteva iste važnosti" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-26.png" type="node">
+				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-26" />
+				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-26" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-26" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-26" match="keyvalue!" />
+				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+				</item>
+				
+			<item name="Crossroads on Priority Road" sr-latn.name="Ukrštanje sa sporednim putem pod pravim uglom" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-27.png" type="node">
+				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-27" />
+				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-27" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-27" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-27" match="keyvalue!" />
+				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+				</item>
+				
+			<item name="Side Road Junction (Left)" sr-latn.name="Spajanje sporednog puta pod pravim uglom sa leve strane" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-28.png" type="node">
+				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-28" />
+				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-28" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-28" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-28" match="keyvalue!" />
+				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+				</item>
+				
+			<item name="Side Road Junction (Right)" sr-latn.name="Spajanje sporednog puta pod pravim uglom sa desne strane" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-28.1.png" type="node">
+				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-28.1" />
+				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-28.1" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-28.1" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-28.1" match="keyvalue!" />
+				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+				</item>
+				
+			<item name="Sharp Junction (Left)" sr-latn.name="Spajanje sporednog puta pod oštrim uglom sa leve strane" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-29.png" type="node">
+				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-29" />
+				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-29" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-29" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-29" match="keyvalue!" />
+				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+				</item>
+				
+			<item name="Sharp Junction (Right)" sr-latn.name="Spajanje sporednog puta pod oštrim uglom sa desne strane" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-29.1.png" type="node">
+				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-29.1" />
+				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-29.1" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-29.1" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-29.1" match="keyvalue!" />
+				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+				</item>
+				
+			<item name="Sharp Junction (Half Left)" sr-latn.name="Spajanje sporednog puta pod tupim uglom sa leve strane" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-29.2.png" type="node">
+				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-29.2" />
+				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-29.2" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-29.2" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-29.2" match="keyvalue!" />
+				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+				</item>
+				
+			<item name="Sharp Junction (Half Right)" sr-latn.name="Spajanje sporednog puta pod tupim uglom sa desne strane" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-29.3.png" type="node">
+				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-29.3" />
+				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-29.3" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-29.3" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-29.3" match="keyvalue!" />
+				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+				</item>
+				
+			<item name="Roundabout" sr-latn.name="Raskrsnica sa kružnim tokom saobraćaja" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-30.png" type="node">
+				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-30" />
+				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-30" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-30" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-30" match="keyvalue!" />
+				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+				</item>
+			</group>
+			
+		<group name="Railway Crossing" sr-latn.name="Prelaz preko pruge" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-34.png">
+			<item name="Trams" sr-latn.name="Tramvajska pruga" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-31.png" type="node">
+				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-31" />
+				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-31" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-31" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-31" match="keyvalue!" />
+				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+				</item>
+				
+			<item name="Railroad Crossing With Barriers" sr-latn.name="Prelaz puta preko železničke pruge sa branicima ili polubranicima" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-32.png" type="node">
+				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-32" />
+				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-32" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-32" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-32" match="keyvalue!" />
+				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+				</item>
+				
+			<item name="Railroad Crossing Without Barriers" sr-latn.name="Prelaz puta preko železničke pruge bez branika ili polubranika" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-33.png" type="node">
+				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-33" />
+				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-33" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-33" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-33" match="keyvalue!" />
+				<check key="traffic_sign:type" text="Old type of the traffic sign" sr-latn.text="Stari tip saobraćajnog znaka" default="off" value_off="" value_on="old" match="keyvalue!" />
+				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+				</item>
+			
+			<item name="Railway Crossing" sr-latn.name="Andrejin krst - prelaz preko železničke pruge u nivou bez branika ili polubranika sa jednim kolosekom" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-34.png" type="node">
+				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-34" />
+				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-34" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-34" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-34" match="keyvalue!" />
+				<check key="traffic_sign:type" text="Old type of the traffic sign" sr-latn.text="Stari tip saobraćajnog znaka" default="off" value_off="" value_on="old" match="keyvalue!" />
+				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+				</item>
+				
+			<item name="Railway Crossing (more then one track)" sr-latn.name="Andrejin krst - prelaz preko železničke pruge u nivou bez branika ili polubranika sa dva ili više koloseka" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-34.1.png" type="node">
+				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-34.1" />
+				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-34.1" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-34.1" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-34.1" match="keyvalue!" />
+				<check key="traffic_sign:type" text="Old type of the traffic sign" sr-latn.text="Stari tip saobraćajnog znaka" default="off" value_off="" value_on="old" match="keyvalue!" />
+				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+				</item>
+				
+			<item name="Railway Crossing Ahead (80 meters)" sr-latn.name="Približavanje prelazu puta preko železničke pruge (80 metara)" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-35.png" type="node">
+				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-35" />
+				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-35" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-35" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-35" match="keyvalue!" />
+				<check key="traffic_sign:type" text="Old type of the traffic sign" sr-latn.text="Stari tip saobraćajnog znaka" default="off" value_off="" value_on="old" match="keyvalue!" />
+				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+				</item>
+				
+			<item name="Railway Crossing Ahead (160 meters)" sr-latn.name="Približavanje prelazu puta preko železničke pruge (160 metara)" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-35.1.png" type="node">
+				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-35.1" />
+				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-35.1" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-35.1" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-35.1" match="keyvalue!" />
+				<check key="traffic_sign:type" text="Old type of the traffic sign" sr-latn.text="Stari tip saobraćajnog znaka" default="off" value_off="" value_on="old" match="keyvalue!" />
+				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+				</item>
+				
+			<item name="Railway Crossing Ahead (240 meters)" sr-latn.name="Približavanje prelazu puta preko železničke pruge (240 metara)" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-35.2.png" type="node">
+				<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-35.2" />
+				<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-35.2" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-35.2" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-35.2" match="keyvalue!" />
+				<check key="traffic_sign:type" text="Old type of the traffic sign" sr-latn.text="Stari tip saobraćajnog znaka" default="off" value_off="" value_on="old" match="keyvalue!" />
+				<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+				</item>
+			</group>
+			
+		<item name="Traffic Queue" sr-latn.name="Kolona zaustavljenih vozila" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-38.png" type="node">
+			<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-38" />
+			<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-38" />
+			<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-38" match="keyvalue!" />
+			<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-38" match="keyvalue!" />
+			<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+			<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+			</item>
+			
+		<item name="Fire hazard" sr-latn.name="Opasnost od požara" icon="josm_preset_traffic_signs-master/RS/warnings/RS_I-39.png" type="node">
+			<check key="traffic_sign:forward" text="Forward" sr-latn.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:I-39" />
+			<check key="traffic_sign:backward" text="Backward" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:I-39" />
+			<check key="traffic_sign:2:forward" text="Forward, second position" sr-latn.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-39" match="keyvalue!" />
+			<check key="traffic_sign:2:backward" text="Backward, second position" sr-latn.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:I-39" match="keyvalue!" />
+			<combo key="side" text="Side of the way" sr-latn.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" es.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+			<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latn.text="Kôd Mapillary fotografije"/>
+			</item>
 		</group>
 	</group>
 </presets>
