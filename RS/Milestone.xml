@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
+author="BrackoNe"
+shortdescription="Milestone"
+description="Milestone traffic signs on highways in Serbia."
+version="1.2019-07-06"
+baselanguage="en">
+
+  <item name="Highway Milestone" icon="traffic_signs_presets/icons/information/RS_III-98.png" type="node" preset_name_label="true">
+    <label text="Inserting a milestone sign on highway" />
+	<key key="highway" value="milestone" />
+    <combo key="traffic_sign:forward" text="Milestone type" default="RS:III-98">
+		<list_entry value="RS:III-98" short_description="Regular milestone sign which is used to inform about kilometers on highway." icon="traffic_signs_presets/icons/information/RS_III-98.png" />
+		<list_entry value="RS:III-99" short_description="Extended milestone sign which contains ref number as well." icon="traffic_signs_presets/icons/information/RS_III-99.png"/>
+		<list_entry value="RS:III-98.1" short_description="Milestone sign which informs about half of kilometer." icon="traffic_signs_presets/icons/information/RS_III-98.1.png"/>
+		</combo>
+	<space />
+	<label text="Distance should be written as a number. No text should be added." />
+	<text key="distance" text="Distance at the sign" />
+    <text key="ref" text="Ref (e.g. A1)" />
+	<text key="traffic_sign:milestone" text="Segment No." />
+	<space />
+    <combo key="side" text="Side of the way" values="right,left,both,up,down" default="right"  />
+	<item_separator />
+	<text key="mapillary" text="Mapillary Image Key" />
+	</item>
+</presets>
