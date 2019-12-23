@@ -1380,7 +1380,7 @@
 			</group>
 		</group>
 		
-	<group name="Information" sr-latn.name="Znakovi obaveštenja" icon="josm_preset_traffic_signs-master/RS/restrictions/RS_III-1.png">
+	<group name="Information" sr-latn.name="Znakovi obaveštenja" icon="josm_preset_traffic_signs-master/RS/information/RS_III-1.png">
 		<item name="Highway Milestone" sr-latn.name="Kilometraža puta" icon="josm_preset_traffic_signs-master/RS/information/RS_III-98.png" type="node" preset_name_label="true">
 			<label text="Inserting a Milestone Sign on a Highway" sr-latn.text="Postavljanje znaka „Kilometraža puta“" />
 			<key key="highway" value="milestone" />
