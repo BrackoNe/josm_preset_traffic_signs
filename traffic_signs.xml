@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="BrackoNe" shortdescription="Traffic Signs (RS)" description="Collection of traffic signs which are used in Republic of Serbia." sr-latin.description="Skup saobraćajnih znakova koji se koriste u Republici Srbiji." version="5.2020-08-13" baselanguage="en">
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="BrackoNe" shortdescription="Traffic Signs (RS)" description="Collection of traffic signs which are used in Republic of Serbia." sr-latin.description="Skup saobraćajnih znakova koji se koriste u Republici Srbiji." version="6.2020-08-13" baselanguage="en">
 
 <group name="Traffic Signs (RS)" sr-latin.name="Saobraćajni znakovi (RS)" icon="josm_preset_traffic_signs-master/RS/RS.png">
 <!-- Warnings -->
@@ -628,7 +628,7 @@
 				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije"/>
 				</item>
 				
-			<item name="No Vehicles Carrying Explosives" sr-latin.name="Zabrana saobraćaja za motorna vozila koja vuku priključno vozilo osim poluprikolice" icon="josm_preset_traffic_signs-master/RS/restrictions/RS_II-9.png" type="node">
+			<item name="No Vehicles Carrying Explosives" sr-latin.name="Zabrana saobraćaja vozilima koja prevoze eksploziv ili lako zapaljive materije" icon="josm_preset_traffic_signs-master/RS/restrictions/RS_II-9.png" type="node">
 				<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:II-9" />
 				<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:II-9" />
 				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:II-9" match="keyvalue!" />
