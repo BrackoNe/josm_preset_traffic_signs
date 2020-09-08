@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="BrackoNe" shortdescription="Traffic Signs (RS)" description="Collection of traffic signs which are used in Republic of Serbia." sr-latin.description="Skup saobraćajnih znakova koji se koriste u Republici Srbiji." version="6.2020-08-13" baselanguage="en">
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="BrackoNe" shortdescription="Traffic Signs (RS)" description="Collection of traffic signs which are used in Republic of Serbia." sr-latin.description="Skup saobraćajnih znakova koji se koriste u Republici Srbiji." version="7.2020-09-08" baselanguage="en">
 
 <group name="Traffic Signs (RS)" sr-latin.name="Saobraćajni znakovi (RS)" icon="josm_preset_traffic_signs-master/RS/RS.png">
 <!-- Warnings -->
@@ -1394,7 +1394,7 @@
 			<text key="distance" text="Distance at the sign" sr-latin.text="Razdaljina na znaku" />
 			<text key="ref" text="Ref (e.g. A1)" sr-latin.text="Oznaka puta (npr. A1)" />
 			<text key="traffic_sign:milestone" text="Segment No." sr-latin.text="Oznaka deonice puta" />
-			<combo key="colour:ref" text="Background of Ref Colour" sr-latin.text="Boja pozadine oznake puta" values="blue,green,yellow" latn.display_values="plava,zelena,žuta" default="green"/>
+			<combo key="colour:ref" text="Background of Ref Colour" sr-latin.text="Boja pozadine oznake puta" values="blue,green,yellow" sr-latin.display_values="plava,zelena,žuta" default="green"/>
 			<space />
 			<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
 			<item_separator />
