@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="BrackoNe" shortdescription="Traffic Signs (RS)" description="Collection of traffic signs which are used in Republic of Serbia." sr-latin.description="Skup saobraćajnih znakova koji se koriste u Republici Srbiji." version="8.2021-04-09" baselanguage="en">
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="BrackoNe" shortdescription="Traffic Signs (RS)" description="Collection of traffic signs which are used in Republic of Serbia." sr-latin.description="Skup saobraćajnih znakova koji se koriste u Republici Srbiji." version="11.2024-01-21" baselanguage="en">
 
 <group name="Traffic Signs (RS)" sr-latin.name="Saobraćajni znakovi (RS)" icon="josm_preset_traffic_signs-master/RS/RS.png">
 <!-- Warnings -->
@@ -1379,7 +1379,7 @@
 				</item>
 			</group>
 		</group>
-		
+<!-- Information -->	
 	<group name="Information" sr-latin.name="Znakovi obaveštenja" icon="josm_preset_traffic_signs-master/RS/information/RS_III-1.png">
 		<item name="Priority Over Oncoming Vehicles" sr-latin.name="Prvenstvo prolaza u odnosu na vozila iz suprotnog smera" icon="josm_preset_traffic_signs-master/RS/information/RS_III-1.png" type="node,way">
 			<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-1" />
@@ -1419,31 +1419,33 @@
 				</item>
 			</group>
 			
-		<item name="Priority Road" sr-latin.name="Put sa prvenstvom prolaza" icon="josm_preset_traffic_signs-master/RS/information/RS_III-3.png" type="node,way">
-			<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-3" />
-			<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-3" />
-			<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-3" match="keyvalue!" />
-			<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-3" match="keyvalue!" />
-			<space />
-			<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
-			<space />
-			<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
-			<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
-			</item>
-			
-		<item name="End of Priority Road" sr-latin.name="Završetak puta sa prvenstvom prolaza" icon="josm_preset_traffic_signs-master/RS/information/RS_III-3.1.png" type="node,way">
-			<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-3.1" />
-			<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-3.1" />
-			<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-3.1" match="keyvalue!" />
-			<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-3.1" match="keyvalue!" />
-			<space />
-			<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
-			<space />
-			<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
-			<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
-			</item>
-			
-		<item name="Speed Bump" sr-latin.name="Prepreka za usporavanje saobraćaja" icon="josm_preset_traffic_signs-master/RS/information/RS_III-4.png" type="node,way">
+		<group name="Priority Road" sr-latin.name="Prvenstvo prolaza" icon="josm_preset_traffic_signs-master/RS/information/RS_III-3.png">
+			<item name="Priority Road" sr-latin.name="Put sa prvenstvom prolaza" icon="josm_preset_traffic_signs-master/RS/information/RS_III-3.png" type="node,way">
+				<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-3" />
+				<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-3" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-3" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-3" match="keyvalue!" />
+				<space />
+				<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+				<space />
+				<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+				</item>
+				
+			<item name="End of Priority Road" sr-latin.name="Završetak puta sa prvenstvom prolaza" icon="josm_preset_traffic_signs-master/RS/information/RS_III-3.1.png" type="node,way">
+				<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-3.1" />
+				<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-3.1" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-3.1" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-3.1" match="keyvalue!" />
+				<space />
+				<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+				<space />
+				<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+				</item>
+			</group>
+		
+		<item name="Speed Hump" sr-latin.name="Prepreka za usporavanje saobraćaja" icon="josm_preset_traffic_signs-master/RS/information/RS_III-4.png" type="node,way">
 			<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-4" />
 			<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-4" />
 			<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-4" match="keyvalue!" />
@@ -1492,7 +1494,620 @@
 				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
 				</item>
 			</group>
+
+		<item name="Underground or Overpass Crossing" sr-latin.name="Podzemni ili nadzemni pešački prolaz" icon="josm_preset_traffic_signs-master/RS/information/RS_III-7.png" type="node,way">
+			<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-7" />
+			<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-7" />
+			<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-7" match="keyvalue!" />
+			<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-7" match="keyvalue!" />
+			<space />
+			<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+			<space />
+			<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+			<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+			</item>
+
+		<group name="Dead End" sr-latin.name="Slepi put" icon="josm_preset_traffic_signs-master/RS/information/RS_III-9.png">
+			<item name="Dead End" sr-latin.name="Slepi put" icon="josm_preset_traffic_signs-master/RS/information/RS_III-9.png" type="node,way">
+				<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-9" />
+				<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-9" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-9" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-9" match="keyvalue!" />
+				<space />
+				<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+				<space />
+				<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+				</item>
 			
+			<item name="Dead End" sr-latin.name="Slepi put" icon="josm_preset_traffic_signs-master/RS/information/RS_III-9.1.png" type="node,way">
+				<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-9.1" />
+				<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-9.1" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-9.1" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-9.1" match="keyvalue!" />
+				<space />
+				<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+				<space />
+				<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+				</item>
+				
+			<item name="Dead End" sr-latin.name="Slepi put" icon="josm_preset_traffic_signs-master/RS/information/RS_III-9.2.png" type="node,way">
+				<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-9.2" />
+				<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-9.2" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-9.2" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-9.2" match="keyvalue!" />
+				<space />
+				<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+				<space />
+				<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+				</item>
+				
+			<item name="Dead End" sr-latin.name="Slepi put" icon="josm_preset_traffic_signs-master/RS/information/RS_III-9.3.png" type="node,way">
+				<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-9.3" />
+				<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-9.3" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-9.3" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-9.3" match="keyvalue!" />
+				<space />
+				<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+				<space />
+				<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+				</item>
+				
+			<item name="Dead End" sr-latin.name="Slepi put" icon="josm_preset_traffic_signs-master/RS/information/RS_III-9.4.png" type="node,way">
+				<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-9.4" />
+				<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-9.4" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-9.4" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-9.4" match="keyvalue!" />
+				<space />
+				<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+				<space />
+				<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+				</item>
+				
+			<item name="Dead End" sr-latin.name="Slepi put" icon="josm_preset_traffic_signs-master/RS/information/RS_III-9.5.png" type="node,way">
+				<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-9.5" />
+				<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-9.5" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-9.5" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-9.5" match="keyvalue!" />
+				<space />
+				<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+				<space />
+				<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+				</item>
+				
+			<item name="Dead End" sr-latin.name="Slepi put" icon="josm_preset_traffic_signs-master/RS/information/RS_III-9.6.png" type="node,way">
+				<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-9.6" />
+				<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-9.6" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-9.6" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-9.6" match="keyvalue!" />
+				<space />
+				<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+				<space />
+				<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+				</item>
+				
+			<item name="Dead End" sr-latin.name="Slepi put" icon="josm_preset_traffic_signs-master/RS/information/RS_III-9.7.png" type="node,way">
+				<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-9.7" />
+				<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-9.7" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-9.7" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-9.7" match="keyvalue!" />
+				<space />
+				<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+				<space />
+				<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+				</item>
+				
+			<item name="Dead End" sr-latin.name="Slepi put" icon="josm_preset_traffic_signs-master/RS/information/RS_III-9.8.png" type="node,way">
+				<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-9.8" />
+				<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-9.8" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-9.8" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-9.8" match="keyvalue!" />
+				<space />
+				<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+				<space />
+				<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+				</item>
+				
+			<item name="Dead End" sr-latin.name="Slepi put" icon="josm_preset_traffic_signs-master/RS/information/RS_III-9.9.png" type="node,way">
+				<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-9.9" />
+				<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-9.9" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-9.9" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-9.9" match="keyvalue!" />
+				<space />
+				<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+				<space />
+				<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+				</item>
+				
+			<item name="Dead End" sr-latin.name="Slepi put" icon="josm_preset_traffic_signs-master/RS/information/RS_III-9.10.png" type="node,way">
+				<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-9.10" />
+				<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-9.10" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-9.10" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-9.10" match="keyvalue!" />
+				<space />
+				<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+				<space />
+				<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+				</item>
+				
+			<item name="Dead End" sr-latin.name="Slepi put" icon="josm_preset_traffic_signs-master/RS/information/RS_III-9.11.png" type="node,way">
+				<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-9.11" />
+				<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-9.11" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-9.11" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-9.11" match="keyvalue!" />
+				<space />
+				<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+				<space />
+				<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+				</item>
+		</group>
+
+		<item name="Redirection Lane for Left Turn at Prohibited Intersection" sr-latin.name="Smer kretanja vozila koje namerava da skrene ulevo na raskrsnici na kojoj je skretanje ulevo zabranjeno" icon="josm_preset_traffic_signs-master/RS/information/RS_III-10.png" type="node,way">
+			<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-10" />
+			<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-10" />
+			<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-10" match="keyvalue!" />
+			<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-10" match="keyvalue!" />
+			<space />
+			<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+			<space />
+			<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+			<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+			</item>
+			
+		<group name="School nearby" sr-latin.name="Blizina škole" icon="josm_preset_traffic_signs-master/RS/information/RS_III-11.png">
+			<item name="School Nearby (Yellow)" sr-latin.name="Blizina škole (žuti)" icon="josm_preset_traffic_signs-master/RS/information/RS_III-11.png" type="node,way">
+				<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-11" />
+				<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-11" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-11" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-11" match="keyvalue!" />
+				<space />
+				<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+				<space />
+				<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+				<key key="traffic_sign:variant" value="yellow" />
+				</item>
+				
+			<item name="School Nearby (Blue)" sr-latin.name="Blizina škole (plavi)" icon="josm_preset_traffic_signs-master/RS/information/RS_III-11_blue.png" type="node,way">
+				<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-11" />
+				<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-11" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-11" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-11" match="keyvalue!" />
+				<space />
+				<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+				<space />
+				<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+				<key key="traffic_sign:variant" value="blue" />
+				</item>
+				
+			<item name="School Nearby (White)" sr-latin.name="Blizina škole (beli)" icon="josm_preset_traffic_signs-master/RS/information/RS_III-11_white" type="node,way">
+				<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-11" />
+				<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-11" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-11" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-11" match="keyvalue!" />
+				<space />
+				<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+				<space />
+				<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+				<key key="traffic_sign:variant" value="white" />
+				</item>
+			</group>
+		
+		<group name="End of Prohibition" sr-latin.name="Prestanak zabrane" icon="josm_preset_traffic_signs-master/RS/information/RS_III-17.png">
+			<item name="End of Overtaking Prohibition for Cars" sr-latin.name="Prestanak zabrane preticanja za motorna vozila" icon="josm_preset_traffic_signs-master/RS/information/RS_III-12.png" type="node,way">
+				<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-12" />
+				<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-12" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-12" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-12" match="keyvalue!" />
+				<space />
+				<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+				<space />
+				<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+				</item>
+				
+			<item name="End of Overtaking Prohibition for Lorries" sr-latin.name="Prestanak zabrane preticanja za teretna vozila" icon="josm_preset_traffic_signs-master/RS/information/RS_III-13.png" type="node,way">
+				<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-13" />
+				<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-13" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-13" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-13" match="keyvalue!" />
+				<space />
+				<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+				<space />
+				<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+				</item>
+
+			<group name="End of Speed Limit" sr-latin.name="Prestanak ograničenja brzine" icon="josm_preset_traffic_signs-master/RS/information/RS_III-14.png">
+				<item name="End of Speed Limit (10)" sr-latin.name="Prestanak ograničenja brzine (10)" icon="josm_preset_traffic_signs-master/RS/information/RS_III-14[10].png" type="node,way">
+					<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-14[10]" />
+					<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-14[10]" />
+					<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-14[10]" match="keyvalue!" />
+					<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-14[10]" match="keyvalue!" />
+					<space />
+					<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+					<space />
+					<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+					<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+					</item>
+					
+				<item name="End of Speed Limit (20)" sr-latin.name="Prestanak ograničenja brzine (20)" icon="josm_preset_traffic_signs-master/RS/information/RS_III-14[20].png" type="node,way">
+					<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-14[20]" />
+					<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-14[20]" />
+					<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-14[20]" match="keyvalue!" />
+					<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-14[20]" match="keyvalue!" />
+					<space />
+					<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+					<space />
+					<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+					<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+					</item>
+					
+				<item name="End of Speed Limit (30)" sr-latin.name="Prestanak ograničenja brzine (30)" icon="josm_preset_traffic_signs-master/RS/information/RS_III-14[30].png" type="node,way">
+					<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-14[30]" />
+					<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-14[30]" />
+					<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-14[30]" match="keyvalue!" />
+					<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-14[30]" match="keyvalue!" />
+					<space />
+					<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+					<space />
+					<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+					<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+					</item>
+					
+				<item name="End of Speed Limit (40)" sr-latin.name="Prestanak ograničenja brzine (40)" icon="josm_preset_traffic_signs-master/RS/information/RS_III-14[40].png" type="node,way">
+					<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-14[40]" />
+					<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-14[40]" />
+					<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-14[40]" match="keyvalue!" />
+					<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-14[40]" match="keyvalue!" />
+					<space />
+					<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+					<space />
+					<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+					<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+					</item>
+					
+				<item name="End of Speed Limit (50)" sr-latin.name="Prestanak ograničenja brzine (50)" icon="josm_preset_traffic_signs-master/RS/information/RS_III-14[50].png" type="node,way">
+					<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-14[50]" />
+					<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-14[50]" />
+					<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-14[50]" match="keyvalue!" />
+					<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-14[50]" match="keyvalue!" />
+					<space />
+					<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+					<space />
+					<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+					<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+					</item>
+					
+				<item name="End of Speed Limit (60)" sr-latin.name="Prestanak ograničenja brzine (60)" icon="josm_preset_traffic_signs-master/RS/information/RS_III-14[60].png" type="node,way">
+					<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-14[60]" />
+					<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-14[60]" />
+					<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-14[60]" match="keyvalue!" />
+					<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-14[60]" match="keyvalue!" />
+					<space />
+					<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+					<space />
+					<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+					<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+					</item>
+					
+				<item name="End of Speed Limit (70)" sr-latin.name="Prestanak ograničenja brzine (70)" icon="josm_preset_traffic_signs-master/RS/information/RS_III-14[70].png" type="node,way">
+					<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-14[70]" />
+					<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-14[70]" />
+					<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-14[70]" match="keyvalue!" />
+					<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-14[70]" match="keyvalue!" />
+					<space />
+					<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+					<space />
+					<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+					<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+					</item>
+					
+				<item name="End of Speed Limit (80)" sr-latin.name="Prestanak ograničenja brzine (80)" icon="josm_preset_traffic_signs-master/RS/information/RS_III-14[80].png" type="node,way">
+					<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-14[80]" />
+					<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-14[80]" />
+					<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-14[80]" match="keyvalue!" />
+					<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-14[80]" match="keyvalue!" />
+					<space />
+					<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+					<space />
+					<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+					<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+					</item>
+					
+				<item name="End of Speed Limit (90)" sr-latin.name="Prestanak ograničenja brzine (90)" icon="josm_preset_traffic_signs-master/RS/information/RS_III-14[90].png" type="node,way">
+					<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-14[90]" />
+					<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-14[90]" />
+					<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-14[90]" match="keyvalue!" />
+					<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-14[90]" match="keyvalue!" />
+					<space />
+					<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+					<space />
+					<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+					<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+					</item>
+					
+				<item name="End of Speed Limit (100)" sr-latin.name="Prestanak ograničenja brzine (100)" icon="josm_preset_traffic_signs-master/RS/information/RS_III-14[100].png" type="node,way">
+					<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-14[100]" />
+					<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-14[100]" />
+					<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-14[100]" match="keyvalue!" />
+					<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-14[100]" match="keyvalue!" />
+					<space />
+					<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+					<space />
+					<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+					<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+					</item>
+					
+				<item name="End of Speed Limit (110)" sr-latin.name="Prestanak ograničenja brzine (110)" icon="josm_preset_traffic_signs-master/RS/information/RS_III-14[110].png" type="node,way">
+					<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-14[110]" />
+					<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-14[110]" />
+					<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-14[110]" match="keyvalue!" />
+					<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-14[110]" match="keyvalue!" />
+					<space />
+					<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+					<space />
+					<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+					<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+					</item>
+					
+				<item name="End of Speed Limit (120)" sr-latin.name="Prestanak ograničenja brzine (120)" icon="josm_preset_traffic_signs-master/RS/information/RS_III-14[120].png" type="node,way">
+					<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-14[120]" />
+					<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-14[120]" />
+					<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-14[120]" match="keyvalue!" />
+					<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-14[120]" match="keyvalue!" />
+					<space />
+					<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+					<space />
+					<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+					<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+					</item>
+				</group>
+
+			<group name="End of Minimum Speed Limit" sr-latin.name="Prestanak najmanje dozvoljene brzine" icon="josm_preset_traffic_signs-master/RS/information/RS_III-15.png">
+				<item name="End of Minimum Speed Limit (10)" sr-latin.name="Prestanak najmanje dozvoljene brzine (10)" icon="josm_preset_traffic_signs-master/RS/information/RS_III-15[10].png" type="node,way">
+					<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-15[10]" />
+					<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-15[10]" />
+					<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-15[10]" match="keyvalue!" />
+					<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-15[10]" match="keyvalue!" />
+					<space />
+					<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+					<space />
+					<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+					<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+					</item>
+					
+				<item name="End of Minimum Speed Limit (20)" sr-latin.name="Prestanak najmanje dozvoljene brzine (20)" icon="josm_preset_traffic_signs-master/RS/information/RS_III-15[20].png" type="node,way">
+					<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-15[20]" />
+					<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-15[20]" />
+					<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-15[20]" match="keyvalue!" />
+					<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-15[20]" match="keyvalue!" />
+					<space />
+					<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+					<space />
+					<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+					<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+					</item>
+					
+				<item name="End of Minimum Speed Limit (30)" sr-latin.name="Prestanak najmanje dozvoljene brzine (30)" icon="josm_preset_traffic_signs-master/RS/information/RS_III-15[30].png" type="node,way">
+					<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-15[30]" />
+					<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-15[30]" />
+					<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-15[30]" match="keyvalue!" />
+					<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-15[30]" match="keyvalue!" />
+					<space />
+					<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+					<space />
+					<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+					<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+					</item>
+					
+				<item name="End of Minimum Speed Limit (40)" sr-latin.name="Prestanak najmanje dozvoljene brzine (40)" icon="josm_preset_traffic_signs-master/RS/information/RS_III-15[40].png" type="node,way">
+					<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-15[40]" />
+					<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-15[40]" />
+					<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-15[40]" match="keyvalue!" />
+					<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-15[40]" match="keyvalue!" />
+					<space />
+					<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+					<space />
+					<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+					<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+					</item>
+					
+				<item name="End of Minimum Speed Limit (50)" sr-latin.name="Prestanak najmanje dozvoljene brzine (50)" icon="josm_preset_traffic_signs-master/RS/information/RS_III-15[50].png" type="node,way">
+					<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-15[50]" />
+					<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-15[50]" />
+					<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-15[50]" match="keyvalue!" />
+					<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-15[50]" match="keyvalue!" />
+					<space />
+					<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+					<space />
+					<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+					<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+					</item>
+					
+				<item name="End of Minimum Speed Limit (60)" sr-latin.name="Prestanak najmanje dozvoljene brzine (60)" icon="josm_preset_traffic_signs-master/RS/information/RS_III-15[60].png" type="node,way">
+					<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-15[60]" />
+					<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-15[60]" />
+					<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-15[60]" match="keyvalue!" />
+					<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-15[60]" match="keyvalue!" />
+					<space />
+					<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+					<space />
+					<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+					<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+					</item>
+					
+				<item name="End of Minimum Speed Limit (70)" sr-latin.name="Prestanak najmanje dozvoljene brzine (70)" icon="josm_preset_traffic_signs-master/RS/information/RS_III-15[70].png" type="node,way">
+					<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-15[70]" />
+					<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-15[70]" />
+					<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-15[70]" match="keyvalue!" />
+					<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-15[70]" match="keyvalue!" />
+					<space />
+					<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+					<space />
+					<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+					<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+					</item>
+					
+				<item name="End of Minimum Speed Limit (80)" sr-latin.name="Prestanak najmanje dozvoljene brzine (80)" icon="josm_preset_traffic_signs-master/RS/information/RS_III-15[80].png" type="node,way">
+					<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-15[80]" />
+					<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-15[80]" />
+					<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-15[80]" match="keyvalue!" />
+					<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-15[80]" match="keyvalue!" />
+					<space />
+					<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+					<space />
+					<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+					<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+					</item>
+					
+				<item name="End of Minimum Speed Limit (90)" sr-latin.name="Prestanak najmanje dozvoljene brzine (90)" icon="josm_preset_traffic_signs-master/RS/information/RS_III-15[90].png" type="node,way">
+					<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-15[90]" />
+					<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-15[90]" />
+					<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-15[90]" match="keyvalue!" />
+					<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-15[90]" match="keyvalue!" />
+					<space />
+					<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+					<space />
+					<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+					<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+					</item>
+					
+				<item name="End of Minimum Speed Limit (100)" sr-latin.name="Prestanak najmanje dozvoljene brzine (100)" icon="josm_preset_traffic_signs-master/RS/information/RS_III-15[100].png" type="node,way">
+					<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-15[100]" />
+					<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-15[100]" />
+					<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-15[100]" match="keyvalue!" />
+					<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-15[100]" match="keyvalue!" />
+					<space />
+					<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+					<space />
+					<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+					<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+					</item>
+					
+				<item name="End of Minimum Speed Limit (110)" sr-latin.name="Prestanak najmanje dozvoljene brzine (110)" icon="josm_preset_traffic_signs-master/RS/information/RS_III-15[110].png" type="node,way">
+					<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-15[110]" />
+					<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-15[110]" />
+					<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-15[110]" match="keyvalue!" />
+					<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-15[110]" match="keyvalue!" />
+					<space />
+					<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+					<space />
+					<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+					<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+					</item>
+					
+				<item name="End of Minimum Speed Limit (120)" sr-latin.name="Prestanak najmanje dozvoljene brzine (120)" icon="josm_preset_traffic_signs-master/RS/information/RS_III-15[120].png" type="node,way">
+					<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-15[120]" />
+					<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-15[120]" />
+					<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-15[120]" match="keyvalue!" />
+					<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-15[120]" match="keyvalue!" />
+					<space />
+					<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+					<space />
+					<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+					<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+					</item>
+				</group>
+
+			<item name="End of No Horn Zone" sr-latin.name="Prestanak zabrane davanja zvučnih znakova" icon="josm_preset_traffic_signs-master/RS/information/RS_III-16.png" type="node,way">
+				<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-16" />
+				<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-16" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-16" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-16" match="keyvalue!" />
+				<space />
+				<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+				<space />
+				<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+				</item>
+
+			<item name="End of All Restrictions" sr-latin.name="Prestanak svih zabrana" icon="josm_preset_traffic_signs-master/RS/information/RS_III-17.png" type="node,way">
+				<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-17" />
+				<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-17" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-17" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-17" match="keyvalue!" />
+				<space />
+				<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+				<space />
+				<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+				</item>
+				
+			<item name="End of Snow Chain Requirement" sr-latin.name="Prestanak obaveze nošenja lanaca za sneg" icon="josm_preset_traffic_signs-master/RS/information/RS_III-18.png" type="node,way">
+				<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-18" />
+				<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-18" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-18" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-18" match="keyvalue!" />
+				<space />
+				<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+				<space />
+				<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+				</item>
+
+			<item name="End of Cycle Path" sr-latin.name="Završetak biciklističke staze" icon="josm_preset_traffic_signs-master/RS/information/RS_III-19.png" type="node,way">
+				<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-19" />
+				<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-19" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-19" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-19" match="keyvalue!" />
+				<space />
+				<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+				<space />
+				<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+				</item>
+
+			<item name="End of footpath" sr-latin.name="Završetak pešačke staze" icon="josm_preset_traffic_signs-master/RS/information/RS_III-20.png" type="node,way">
+				<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-20" />
+				<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-20" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-20" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-20" match="keyvalue!" />
+				<space />
+				<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+				<space />
+				<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+				</item>
+				
+			<item name="End of Shared-Use Path" sr-latin.name="Završetak spojene biciklističke i pešačke staze" icon="josm_preset_traffic_signs-master/RS/information/RS_III-21.png" type="node,way">
+				<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-21" />
+				<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-21" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-21" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-21" match="keyvalue!" />
+				<space />
+				<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+				<space />
+				<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+				</item>
+				
+			<item name="End of Bridleway" sr-latin.name="Završetak staze za jahače" icon="josm_preset_traffic_signs-master/RS/information/RS_III-22.png" type="node,way">
+				<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-22" />
+				<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-22" />
+				<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-22" match="keyvalue!" />
+				<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-22" match="keyvalue!" />
+				<space />
+				<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
+				<space />
+				<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+				<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
+				</item>
+			</group>
+	
 		<item name="Highway Milestone" sr-latin.name="Kilometraža puta" icon="josm_preset_traffic_signs-master/RS/information/RS_III-98.png" type="node" preset_name_label="true">
 			<label text="Inserting a Milestone Sign on a Highway" sr-latin.text="Postavljanje znaka „Kilometraža puta“" />
 			<key key="highway" value="milestone" />
