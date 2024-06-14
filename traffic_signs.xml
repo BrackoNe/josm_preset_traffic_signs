@@ -2128,7 +2128,25 @@
 			<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije" />
 			</item>
 		</group>
-	
+
+<!-- Background covers -->	
+	<group name="Background Covers" sr-latin.name="Reflektujuće table" icon="josm_preset_traffic_signs-master/RS/backgrounds/yellow_single_distance_blinker.png">
+		<item name="Green Background with Distance" sr-latin.name="Reflektujuća pozadina zelene boje sa razdaljinom" icon="josm_preset_traffic_signs-master/RS/backgrounds/green_empty_triple.png" type="node">
+			<key key="traffic_sign:background" value="green" />
+			<text key="distance_ahead" text="Displayed Distance" sr-latin.text="Istaknuta razdaljina" />
+			</item>
+		<item name="Yellow Background" sr-latin.name="Reflektujuća pozadina žute boje" icon="josm_preset_traffic_signs-master/RS/backgrounds/yellow_empty_single_no_border.png" type="node">
+			<key key="traffic_sign:background" value="yellow" />
+			<check key="frame" text="Black Frame" sr-latin.text="Crni okvir" default="off" value_off="" value_on="yes" />
+			<check key="traffic_sign:background" text="Caption: DANGER" sr-latin.text="Natpis: OPASNOST" default="off" value_off="" value_on="danger" />
+			</item>
+		<item name="Yellow Background with Distance" sr-latin.name="Reflektujuća pozadina žute boje sa razdaljinom" icon="josm_preset_traffic_signs-master/RS/backgrounds/yellow_single_distance.png" type="node">
+			<key key="traffic_sign:background" value="yellow" />
+			<check key="traffic_sign:blinker" text="Blinkers on the Top" sr-latin.text="Blinkeri na vrhu znaka" default="off" value_off="" value_on="yes" />
+			<text key="distance_ahead" text="Displayed Distance" sr-latin.text="Istaknuta razdaljina" />
+			</item>
+		</group>
+		
 	<item name="Generic Traffic Sign" sr-latin.name="Generički saobraćajni znak" icon="josm_preset_traffic_signs-master/RS/RS_generic.png" type="node,way">
 		<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:generic" />
 		<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:generic" />
