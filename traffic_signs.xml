@@ -2150,6 +2150,7 @@
 <!-- Additional information plates -->	
 	<item name="Additional Information Plates" sr-latin.name="Dopunske table" icon="josm_preset_traffic_signs-master/RS/additional/RS_IV-20.png" type="node">
 		<label text="IMPORTANT: Traffic signs are marked in FORWARD direction only!" sr-latin.text="VAŽNO: Moguće je odabrati samo znakove U SMERU KRETANjA VEKTORA!"/>
+		<item_separator />
 		<label text="Choose here if plate is on the 2nd position" sr-latin.text="Odaberite sa ove liste ako je znak na drugoj poziciji"/>
 		<space/>
 		<combo key="traffic_sign:2:forward" text="Which sign is posted on 2nd position" sr-latin.text="Koji znak je postavljen na 2. poziciji">
