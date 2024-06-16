@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="BrackoNe" shortdescription="Traffic Signs (RS)" description="Collection of traffic signs which are used in Republic of Serbia." sr-latin.description="Skup saobraćajnih znakova koji se koriste u Republici Srbiji." version="13.3.2024-06-16" baselanguage="en">
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="BrackoNe" shortdescription="Traffic Signs (RS)" description="Collection of traffic signs which are used in Republic of Serbia." sr-latin.description="Skup saobraćajnih znakova koji se koriste u Republici Srbiji." version="14.2024-06-16" baselanguage="en">
 
 <group name="Traffic Signs (RS)" sr-latin.name="Saobraćajni znakovi (RS)" icon="josm_preset_traffic_signs-master/RS/RS.png">
 <!-- Warnings -->
@@ -2170,7 +2170,7 @@
 			<list_entry value="RS:IV-20.1" short_description="When there is snow on the road" sr-latin.short_description="Kada je na kolovozu sneg" icon="josm_preset_traffic_signs-master/RS/additional/RS_IV-20.1.png"/>
 			<list_entry value="RS:IV-21" short_description="Parking space reserved for vehicles of people with disabilities" sr-latin.short_description="Parking mesto rezervisano za vozila lica sa invaliditetom" icon="josm_preset_traffic_signs-master/RS/additional/RS_IV-21.png"/>
 			</combo>
-		<space/>
+		<item_separator />
 		<label text="Choose here if plate is on the 3nd position" sr-latin.text="Odaberite sa ove liste ako je znak na trećoj poziciji"/>
 		<space/>
 		<combo key="traffic_sign:3:forward" text="Which sign is posted on 3rd position" sr-latin.text="Koji znak je postavljen na 3. poziciji">
@@ -2191,7 +2191,7 @@
 			<list_entry value="RS:IV-20.1" short_description="When there is snow on the road" sr-latin.short_description="Kada je na kolovozu sneg" icon="josm_preset_traffic_signs-master/RS/additional/RS_IV-20.1.png"/>
 			<list_entry value="RS:IV-21" short_description="Parking space reserved for vehicles of people with disabilities" sr-latin.short_description="Parking mesto rezervisano za vozila lica sa invaliditetom" icon="josm_preset_traffic_signs-master/RS/additional/RS_IV-21.png"/>
 			</combo>
-		<space/>
+		<item_separator />
 		<label text="Choose here if plate is on the 4th position" sr-latin.text="Odaberite sa ove liste ako je znak na četvrtoj poziciji"/>
 		<space/>
 		<combo key="traffic_sign:4:forward" text="Which sign is posted on 4th position" sr-latin.text="Koji znak je postavljen na 4. poziciji">
@@ -2212,7 +2212,7 @@
 			<list_entry value="RS:IV-20.1" short_description="When there is snow on the road" sr-latin.short_description="Kada je na kolovozu sneg" icon="josm_preset_traffic_signs-master/RS/additional/RS_IV-20.1.png"/>
 			<list_entry value="RS:IV-21" short_description="Parking space reserved for vehicles of people with disabilities" sr-latin.short_description="Parking mesto rezervisano za vozila lica sa invaliditetom" icon="josm_preset_traffic_signs-master/RS/additional/RS_IV-21.png"/>
 			</combo>
-		<space/>
+		<item_separator />
 		<label text="Following keys are optional!" sr-latin.text="Sledeći atributi nisu obavezni!"/>
 		<space/>
 		<text key="distance_ahead" text="Displayed Distance" sr-latin.text="Istaknuta razdaljina" />
