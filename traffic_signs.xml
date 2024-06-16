@@ -2152,7 +2152,7 @@
 		<label text="IMPORTANT: Traffic signs are marked in FORWARD direction only!" sr-latin.text="VAŽNO: Moguće je odabrati samo znakove U SMERU KRETANjA VEKTORA!"/>
 		<label text="Choose here if plate is on the 2nd position" sr-latin.text="Odaberite sa ove liste ako je znak na drugoj poziciji"/>
 		<space/>
-		<combo key="traffic_sign:2:forward" text="Which sign is posted on 2nd position" sr-latin.text="Koji znak je postavljen na 2. poziciji" default="RS:IV-5">
+		<combo key="traffic_sign:2:forward" text="Which sign is posted on 2nd position" sr-latin.text="Koji znak je postavljen na 2. poziciji">
 			<list_entry value="RS:IV-1" short_description="Distance from the place to which the sign refers" sr-latin.short_description="Udaljenost od mesta na koje se znak odnosi" icon="josm_preset_traffic_signs-master/RS/additional/RS_IV-1.png"/>
 			<list_entry value="RS:IV-1" short_description="Percentage of uphill/downhill slope (old type sign)" sr-latin.short_description="Procenat uspona/nizbrdice (stari tip zaka)" icon="josm_preset_traffic_signs-master/RS/additional/RS_IV-1.png"/>
 			<list_entry value="RS:IV-2" short_description="Length of the section of the road where the danger indicated by the sign is threatened" sr-latin.short_description="Dužina dela puta na kome preti opasnost označena znakom" icon="josm_preset_traffic_signs-master/RS/additional/RS_IV-2.png"/>
@@ -2173,7 +2173,7 @@
 		<space/>
 		<label text="Choose here if plate is on the 3nd position" sr-latin.text="Odaberite sa ove liste ako je znak na trećoj poziciji"/>
 		<space/>
-		<combo key="traffic_sign:3:forward" text="Which sign is posted on 3rd position" sr-latin.text="Koji znak je postavljen na 3. poziciji" default="RS:IV-5">
+		<combo key="traffic_sign:3:forward" text="Which sign is posted on 3rd position" sr-latin.text="Koji znak je postavljen na 3. poziciji">
 			<list_entry value="RS:IV-1" short_description="Distance from the place to which the sign refers" sr-latin.short_description="Udaljenost od mesta na koje se znak odnosi" icon="josm_preset_traffic_signs-master/RS/additional/RS_IV-1.png"/>
 			<list_entry value="RS:IV-1" short_description="Percentage of uphill/downhill slope (old type sign)" sr-latin.short_description="Procenat uspona/nizbrdice (stari tip zaka)" icon="josm_preset_traffic_signs-master/RS/additional/RS_IV-1.png"/>
 			<list_entry value="RS:IV-2" short_description="Length of the section of the road where the danger indicated by the sign is threatened" sr-latin.short_description="Dužina dela puta na kome preti opasnost označena znakom" icon="josm_preset_traffic_signs-master/RS/additional/RS_IV-2.png"/>
@@ -2194,7 +2194,7 @@
 		<space/>
 		<label text="Choose here if plate is on the 4th position" sr-latin.text="Odaberite sa ove liste ako je znak na četvrtoj poziciji"/>
 		<space/>
-		<combo key="traffic_sign:4:forward" text="Which sign is posted on 4th position" sr-latin.text="Koji znak je postavljen na 4. poziciji" default="RS:IV-5">
+		<combo key="traffic_sign:4:forward" text="Which sign is posted on 4th position" sr-latin.text="Koji znak je postavljen na 4. poziciji">
 			<list_entry value="RS:IV-1" short_description="Distance from the place to which the sign refers" sr-latin.short_description="Udaljenost od mesta na koje se znak odnosi" icon="josm_preset_traffic_signs-master/RS/additional/RS_IV-1.png"/>
 			<list_entry value="RS:IV-1" short_description="Percentage of uphill/downhill slope (old type sign)" sr-latin.short_description="Procenat uspona/nizbrdice (stari tip zaka)" icon="josm_preset_traffic_signs-master/RS/additional/RS_IV-1.png"/>
 			<list_entry value="RS:IV-2" short_description="Length of the section of the road where the danger indicated by the sign is threatened" sr-latin.short_description="Dužina dela puta na kome preti opasnost označena znakom" icon="josm_preset_traffic_signs-master/RS/additional/RS_IV-2.png"/>
