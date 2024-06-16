@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="BrackoNe" shortdescription="Traffic Signs (RS)" description="Collection of traffic signs which are used in Republic of Serbia." sr-latin.description="Skup saobraćajnih znakova koji se koriste u Republici Srbiji." version="12.2024-06-16" baselanguage="en">
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="BrackoNe" shortdescription="Traffic Signs (RS)" description="Collection of traffic signs which are used in Republic of Serbia." sr-latin.description="Skup saobraćajnih znakova koji se koriste u Republici Srbiji." version="13.2024-06-16" baselanguage="en">
 
 <group name="Traffic Signs (RS)" sr-latin.name="Saobraćajni znakovi (RS)" icon="josm_preset_traffic_signs-master/RS/RS.png">
 <!-- Warnings -->
@@ -2150,22 +2150,22 @@
 <!-- Additional information plates -->	
 	<item name="Additional Information Plates" sr-latin.name="Dopunske table" icon="josm_preset_traffic_signs-master/RS/additional/RS_IV-20.png" type="node">
 		<combo key="traffic_sign" text="Which sign is posted" sr-latin.text="Koje je znak postavljen" default="RS:IV-5">
-			<list_entry value="RS:IV-1" short_description="Distance from the place to which the sign refers" sr-latin.short_description="Udaljenost od mesta na koje se znak odnosi" icon="josm_preset_yield-stop_traffic_signs-master/icons/additional/RS_IV-1.png"/>
-			<list_entry value="RS:IV-1" short_description="Percentage of uphill/downhill slope (old type sign)" sr-latin.short_description="Procenat uspona/nizbrdice (stari tip zaka)" icon="josm_preset_yield-stop_traffic_signs-master/icons/additional/RS_IV-1.png"/>
-			<list_entry value="RS:IV-2" short_description="Length of the section of the road where the danger indicated by the sign is threatened" sr-latin.short_description="Dužina dela puta na kome preti opasnost označena znakom" icon="josm_preset_yield-stop_traffic_signs-master/icons/additional/RS_IV-2.png"/>
-			<list_entry value="RS:IV-4" short_description="Time for which the explicit prohibition is valid" sr-latin.short_description="Vreme za koje važi izričita zabrana" icon="josm_preset_yield-stop_traffic_signs-master/icons/additional/RS_IV-4.png"/>
-			<list_entry value="RS:IV-5" short_description="Text definition of the meaning of the sign" sr-latin.short_description="Rečima bliže određivanje značenja znaka" icon="josm_preset_yield-stop_traffic_signs-master/icons/additional/RS_IV-5.png"/>
-			<list_entry value="RS:IV-5.3" short_description="Text definition of the meaning of the sign (blue)" sr-latin.short_description="Rečima bliže određivanje značenja znaka (plavi)" icon="josm_preset_yield-stop_traffic_signs-master/icons/additional/RS_IV-5.3.png"/>
-			<list_entry value="RS:IV-6" short_description="For trucks" sr-latin.short_description="Za kamione" icon="josm_preset_yield-stop_traffic_signs-master/icons/additional/RS_IV-6.png"/>
-			<list_entry value="RS:IV-6.a" short_description="For cars" sr-latin.short_description="Za automobile" icon="josm_preset_yield-stop_traffic_signs-master/icons/additional/RS_IV-6.a.png"/>
-			<list_entry value="RS:IV-6.b" short_description="For trucks up to 5T" sr-latin.short_description="Za kamione do 5T" icon="josm_preset_yield-stop_traffic_signs-master/icons/additional/RS_IV-6.b.png"/>
-			<list_entry value="RS:IV-6.c" short_description="For buses" sr-latin.short_description="Za autobuse" icon="josm_preset_yield-stop_traffic_signs-master/icons/additional/RS_IV-6.c.png"/>
-			<list_entry value="RS:IV-7" short_description="Danger of slippery road due to icing" sr-latin.short_description="Opasnost od klizavog kolovoza zbog nastanka poledice" icon="josm_preset_yield-stop_traffic_signs-master/icons/additional/RS_IV-7.png"/>
-			<list_entry value="RS:IV-9" short_description="Distance of parking lot, garage or object on the road" sr-latin.short_description="Udaljenost mesta parkirališta, garaže ili objekta na putu" icon="josm_preset_yield-stop_traffic_signs-master/icons/additional/RS_IV-9.png"/>
-			<list_entry value="RS:IV-19" short_description="Section of the road where snow is cleared mechanically" sr-latin.short_description="Deonica puta na kome se sneg čisti mašinski" icon="josm_preset_yield-stop_traffic_signs-master/icons/additional/RS_IV-19.png"/>
-			<list_entry value="RS:IV-20" short_description="When it is raining" sr-latin.short_description="Kada pada kiša" icon="josm_preset_yield-stop_traffic_signs-master/icons/additional/RS_IV-20.png"/>
-			<list_entry value="RS:IV-20.1" short_description="When there is snow on the road" sr-latin.short_description="Kada je na kolovozu sneg" icon="josm_preset_yield-stop_traffic_signs-master/icons/additional/RS_IV-20.1.png"/>
-			<list_entry value="RS:IV-21" short_description="Parking space reserved for vehicles of people with disabilities" sr-latin.short_description="Parking mesto rezervisano za vozila lica sa invaliditetom" icon="josm_preset_yield-stop_traffic_signs-master/icons/additional/RS_IV-21.png"/>
+			<list_entry value="RS:IV-1" short_description="Distance from the place to which the sign refers" sr-latin.short_description="Udaljenost od mesta na koje se znak odnosi" icon="josm_preset_yield-stop_traffic_signs-master/RS/additional/RS_IV-1.png"/>
+			<list_entry value="RS:IV-1" short_description="Percentage of uphill/downhill slope (old type sign)" sr-latin.short_description="Procenat uspona/nizbrdice (stari tip zaka)" icon="josm_preset_yield-stop_traffic_signs-master/RS/additional/RS_IV-1.png"/>
+			<list_entry value="RS:IV-2" short_description="Length of the section of the road where the danger indicated by the sign is threatened" sr-latin.short_description="Dužina dela puta na kome preti opasnost označena znakom" icon="josm_preset_yield-stop_traffic_signs-master/RS/additional/RS_IV-2.png"/>
+			<list_entry value="RS:IV-4" short_description="Time for which the explicit prohibition is valid" sr-latin.short_description="Vreme za koje važi izričita zabrana" icon="josm_preset_yield-stop_traffic_signs-master/RS/additional/RS_IV-4.png"/>
+			<list_entry value="RS:IV-5" short_description="Text definition of the meaning of the sign" sr-latin.short_description="Rečima bliže određivanje značenja znaka" icon="josm_preset_yield-stop_traffic_signs-master/RS/additional/RS_IV-5.png"/>
+			<list_entry value="RS:IV-5.3" short_description="Text definition of the meaning of the sign (blue)" sr-latin.short_description="Rečima bliže određivanje značenja znaka (plavi)" icon="josm_preset_yield-stop_traffic_signs-master/RS/additional/RS_IV-5.3.png"/>
+			<list_entry value="RS:IV-6" short_description="For trucks" sr-latin.short_description="Za kamione" icon="josm_preset_yield-stop_traffic_signs-master/RS/additional/RS_IV-6.png"/>
+			<list_entry value="RS:IV-6.a" short_description="For cars" sr-latin.short_description="Za automobile" icon="josm_preset_yield-stop_traffic_signs-master/RS/additional/RS_IV-6.a.png"/>
+			<list_entry value="RS:IV-6.b" short_description="For trucks up to 5T" sr-latin.short_description="Za kamione do 5T" icon="josm_preset_yield-stop_traffic_signs-master/RS/additional/RS_IV-6.b.png"/>
+			<list_entry value="RS:IV-6.c" short_description="For buses" sr-latin.short_description="Za autobuse" icon="josm_preset_yield-stop_traffic_signs-master/RS/additional/RS_IV-6.c.png"/>
+			<list_entry value="RS:IV-7" short_description="Danger of slippery road due to icing" sr-latin.short_description="Opasnost od klizavog kolovoza zbog nastanka poledice" icon="josm_preset_yield-stop_traffic_signs-master/RS/additional/RS_IV-7.png"/>
+			<list_entry value="RS:IV-9" short_description="Distance of parking lot, garage or object on the road" sr-latin.short_description="Udaljenost mesta parkirališta, garaže ili objekta na putu" icon="josm_preset_yield-stop_traffic_signs-master/RS/additional/RS_IV-9.png"/>
+			<list_entry value="RS:IV-19" short_description="Section of the road where snow is cleared mechanically" sr-latin.short_description="Deonica puta na kome se sneg čisti mašinski" icon="josm_preset_yield-stop_traffic_signs-master/RS/additional/RS_IV-19.png"/>
+			<list_entry value="RS:IV-20" short_description="When it is raining" sr-latin.short_description="Kada pada kiša" icon="josm_preset_yield-stop_traffic_signs-master/RS/additional/RS_IV-20.png"/>
+			<list_entry value="RS:IV-20.1" short_description="When there is snow on the road" sr-latin.short_description="Kada je na kolovozu sneg" icon="josm_preset_yield-stop_traffic_signs-master/RS/additional/RS_IV-20.1.png"/>
+			<list_entry value="RS:IV-21" short_description="Parking space reserved for vehicles of people with disabilities" sr-latin.short_description="Parking mesto rezervisano za vozila lica sa invaliditetom" icon="josm_preset_yield-stop_traffic_signs-master/RS/additional/RS_IV-21.png"/>
 			</combo>
 		<space/>
 			<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off=""/>
