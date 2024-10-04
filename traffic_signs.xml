@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="BrackoNe" shortdescription="Traffic Signs (RS)" description="Collection of traffic signs which are used in Republic of Serbia." sr-latin.description="Skup saobraćajnih znakova koji se koriste u Republici Srbiji." version="14.2024-06-16" baselanguage="en">
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="BrackoNe" shortdescription="Traffic Signs (RS)" description="Collection of traffic signs which are used in Republic of Serbia." sr-latin.description="Skup saobraćajnih znakova koji se koriste u Republici Srbiji." version="16.2024-10-04" baselanguage="en">
 
 <group name="Traffic Signs (RS)" sr-latin.name="Saobraćajni znakovi (RS)" icon="josm_preset_traffic_signs-master/RS/RS.png">
 <!-- Warnings -->
@@ -1504,11 +1504,11 @@
 				</item>
 			</group>
 
-		<item name="Underground or Overpass Crossing" sr-latin.name="Podzemni ili nadzemni pešački prolaz" icon="josm_preset_traffic_signs-master/RS/information/RS_III-7.png" type="node,way">
-			<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-7" />
-			<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-7" />
-			<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-7" match="keyvalue!" />
-			<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-7" match="keyvalue!" />
+		<item name="Underground or Overpass Crossing" sr-latin.name="Podzemni ili nadzemni pešački prolaz" icon="josm_preset_traffic_signs-master/RS/information/RS_III-8.png" type="node,way">
+			<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:III-8" />
+			<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:III-8" />
+			<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-8" match="keyvalue!" />
+			<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:III-8" match="keyvalue!" />
 			<space />
 			<label text="Don't forget to add a turn restriction relation if necessary!" sr-latin.text="Nemojte zaboraviti da dodate relaciju zabrane skretanja ukoliko je potrebno!" />
 			<space />
