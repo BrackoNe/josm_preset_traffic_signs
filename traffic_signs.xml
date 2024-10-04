@@ -997,6 +997,15 @@
 			<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije"/>
 			</item>
 			
+		<item name="No Photo" sr-latin.name="Zabrana fotografisanja" icon="josm_preset_traffic_signs-master/RS/restrictions/RS_II-99.png" type="node">
+			<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:II-99" />
+			<check key="traffic_sign:backward" text="Backward" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora" default="off" value_off="" value_on="RS:II-99" />
+			<check key="traffic_sign:2:forward" text="Forward, second position" sr-latin.text="U pravcu kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:II-99" match="keyvalue!" />
+			<check key="traffic_sign:2:backward" text="Backward, second position" sr-latin.text="U suprotnom pravcu od pravca kretanja vektora, na drugoj poziciji" default="off" value_off="" value_on="RS:II-99" match="keyvalue!" />
+			<combo key="side" text="Side of the way" sr-latin.text="Sa koje strane se nalazi znak" values="right,left,both,up,down,90,270" sr-latin.display_values="zdesna,sleva,s obe,od gore,od dole,90,270" default="right" />
+			<text key="source:traffic_sign:mapillary" text="Mapillary Image Key" sr-latin.text="Kôd Mapillary fotografije"/>
+			</item>
+			
 		<group name="Stop for Checkpoint" sr-latin.name="Zabrana prolaza bez zaustavljanja" icon="josm_preset_traffic_signs-master/RS/restrictions/RS_II-32.png">
 			<item name="Customs Checkpoint" sr-latin.name="Carina" icon="josm_preset_traffic_signs-master/RS/restrictions/RS_II-32.png" type="node">
 				<check key="traffic_sign:forward" text="Forward" sr-latin.text="U pravcu kretanja vektora" default="off" value_off="" value_on="RS:II-32" />
